@@ -1,4 +1,4 @@
-// PAT甲级1022 DigitalLibrary，原题地址：https://www.patest.cn/contests/pat-a-practise/1022
+// PAT甲级1022 Digital Library，原题地址：https://www.patest.cn/contests/pat-a-practise/1022
 // 解题分析：
 //  这题最后一个测试点超时。。。看了自己的程序发现基本没有优化的空间，所以也就放弃了最后一个测试点，可能总体的思路有问题。
 //  这个程序的总体思路是把标题、作者等信息分别用不同的数组存储，每当输入一个新的数据块，对于不同的信息在不同的数组搜索，

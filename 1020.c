@@ -1,4 +1,4 @@
-// PAt甲级1020 Tree Traversals，原题地址：https://www.patest.cn/contests/pat-a-practise/1020
+// PAT甲级1020 Tree Traversals，原题地址：https://www.patest.cn/contests/pat-a-practise/1020
 // 解题分析：
 //  树的遍历。给出一个树的中序遍历序列和前序或后序遍历，即可构建出唯一的一个树。题目中给的是中序遍历序列和后序遍历序列。
 //  后序遍历序列的最后一个节点是根节点，这个节点将中序遍历一分为二，左边的就是这个节点的左子树，右边的是右子树。在构建树

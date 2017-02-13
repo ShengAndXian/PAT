@@ -1,4 +1,4 @@
-// PAT甲级1019 General Palindromic Number，原题地址：General Palindromic Number
+// PAT甲级1019 General Palindromic Number，原题地址：https://www.patest.cn/contests/pat-a-practise/1019
 // 解题分析：
 //  题目很简单。首先将所给十进制数转换为对应base下的数，将每一位存在数组，然后从头和尾开始比较即可，如有
 //  不相等的数则flag为0，否则为1.然后输出对应结果即可。
