@@ -14,12 +14,14 @@ struct record{
 };
 
 vector<struct record> v;
-vector<struct record> ans;
 long n;
 int b1 , b2;
 
 bool cmp(struct record a , struct record b){
-    return a.grade > b.grade;
+    if(a.grade >= b1 && a.grade <= b2)
+        return b.grade >= b1 && b.grade <= b2 ? a.grade > b.grade : true;
+    else
+        return b.grade >= b1 && b.grade <= b2 ? false : false;
 }
 int main(){
     struct record R;
@@ -37,15 +39,11 @@ int main(){
         v.push_back(R);
     }
     cin >> b1 >> b2;
-    for(i = 0;i < n;i++){
-        if(v[i].grade >= b1 && v[i].grade <= b2)
-            ans.push_back(v[i]);
-    }
-    sort(ans.begin() , ans.end() , cmp);
-    for(i = 0;i < ans.size();i++){
-        if(ans[i].grade >= b1 && ans[i].grade <= b2){
+    sort(v.begin() , v.end() , cmp);
+    for(i = 0;i < v.size();i++){
+        if(v[i].grade >= b1 && v[i].grade <= b2){
             flag = 1;
-            cout << ans[i].name << " " << ans[i].id << endl;
+            cout << v[i].name << " " << v[i].id << endl;
         }
         else{
             break;
